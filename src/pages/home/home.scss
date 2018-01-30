@@ -1,3 +1,10 @@
 page-home {
-
+    .hyphenate {
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+    }
+    .donthyphenate {}
 }

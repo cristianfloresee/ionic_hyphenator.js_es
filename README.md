@@ -1,1 +1,6 @@
-### :point_right: This starter repo has moved to the [ionic-team/starters](https://github.com/ionic-team/starters/tree/master/ionic-angular/official/blank) repo! :point_left:
+# Ejemplo de Ionic 3 con Hyphenator.js
+
+## Referencias
+
++ Hyphenator.js:  
+https://github.com/mnater/Hyphenator

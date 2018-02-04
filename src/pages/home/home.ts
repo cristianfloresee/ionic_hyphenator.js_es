@@ -10,7 +10,23 @@ export class HomePage {
   parrafo;
 
   constructor() { 
-    this.parrafo = 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.';    
+    this.parrafo = '<p>Se informa que, para facilitar el ingreso de alumnos nuevos, <strong>el sistema de matr&iacute;cula e inscripci&oacute;n para los alumnos antiguos se cerrar&aacute;</strong> desde el jueves 18 de enero a las 11:30 horas. hasta el domingo 21 de enero a las 20:00 horas. Posteriormente, el sistema se encontrar&aacute;n abierto hasta las fechas indicadas en el informativo anterior.</p>';
+    this.parrafo = this.transformarString(this.parrafo);    
+  }
+
+  transformarString(parrafo){
+    //parrafo = "&aacute;";
+
+    parrafo = parrafo.replace(/&aacute;/g, "á");
+    parrafo = parrafo.replace(/&eacute;/g, "é");
+    parrafo = parrafo.replace(/&iacute;/g, "í");
+    parrafo = parrafo.replace(/&oacute;/g, "ó");
+    parrafo = parrafo.replace(/&uacute;/g, "ú");
+    return parrafo;
+
+    //style=\" ------ \", ""
+    //console.log(parrafo);
+    
   }
 
 }

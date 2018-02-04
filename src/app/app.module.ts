@@ -6,8 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import hypher from 'hypher';
-import hyphenation from 'hyphenation.es';
 import { PipesModule } from '../pipes/pipes.module';
 
 

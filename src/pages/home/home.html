@@ -7,6 +7,6 @@
 </ion-header>
 
 <ion-content padding>
-  
-  <p text-justify>{{parrafo | hyphen}}</p>
+  <span text-justify [innerHtml]="parrafo | hyphen"></span>
+  <!--<p text-justify>{{parrafo | hyphen}}</p>-->
 </ion-content>
